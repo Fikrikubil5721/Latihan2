@@ -1,0 +1,55 @@
+object btnUbah: TbtnUbah
+  Left = 256
+  Height = 310
+  Top = 145
+  Width = 537
+  Caption = 'Program Pertama'
+  ClientHeight = 310
+  ClientWidth = 537
+  LCLVersion = '3.0.0.1'
+  object lblUbahCaption: TLabel
+    Left = 40
+    Height = 15
+    Top = 104
+    Width = 104
+    Caption = 'Ubah Caption Form'
+  end
+  object edtEditCaption: TEdit
+    Left = 168
+    Height = 23
+    Top = 96
+    Width = 312
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 167
+    Height = 29
+    Top = 147
+    Width = 121
+    Caption = 'Ubah Caption Form'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object btnExit: TButton
+    Left = 296
+    Height = 29
+    Top = 147
+    Width = 128
+    Caption = 'Exit Program'
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 25
+    Top = 32
+    Width = 405
+    Caption = 'Program Latihan Mengenal Komponen Visual'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+end

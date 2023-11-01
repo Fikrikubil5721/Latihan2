@@ -1,0 +1,152 @@
+object Form1: TForm1
+  Left = 256
+  Height = 482
+  Top = 145
+  Width = 493
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.1'
+  object lblPengguna: TLabel
+    Left = 48
+    Height = 15
+    Top = 39
+    Width = 89
+    Caption = 'Nama Pengguna'
+  end
+  object lblJabtan: TLabel
+    Left = 48
+    Height = 15
+    Top = 72
+    Width = 40
+    Caption = 'Jabatan'
+  end
+  object lblGaji: TLabel
+    Left = 48
+    Height = 15
+    Top = 104
+    Width = 56
+    Caption = 'Gaji Pokok'
+  end
+  object edtNama: TEdit
+    Left = 168
+    Height = 23
+    Top = 39
+    Width = 168
+    TabOrder = 0
+    Text = 'edtNama'
+  end
+  object edtGapok: TEdit
+    Left = 168
+    Height = 23
+    Top = 104
+    Width = 168
+    TabOrder = 1
+    Text = 'edtGapok'
+  end
+  object cbJabatan: TComboBox
+    Left = 168
+    Height = 23
+    Top = 72
+    Width = 168
+    ItemHeight = 15
+    Items.Strings = (
+      'Direktur'
+      'Manager'
+      'Kariyawan'
+    )
+    OnChange = cbJabatanChange
+    TabOrder = 2
+    Text = 'cbJabatan'
+  end
+  object rgStatus: TRadioGroup
+    Left = 40
+    Height = 73
+    Top = 152
+    Width = 296
+    AutoFill = True
+    Caption = 'Status'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 53
+    ClientWidth = 292
+    TabOrder = 3
+    object RadioButton1: TRadioButton
+      Left = 6
+      Height = 27
+      Top = 0
+      Width = 280
+      Caption = 'Tetap'
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 6
+      Height = 26
+      Top = 27
+      Width = 280
+      Caption = 'Honorer'
+      TabOrder = 1
+    end
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 15
+    Top = 249
+    Width = 91
+    Caption = 'Status Tunjangan'
+  end
+  object edtTunjangan: TEdit
+    Left = 168
+    Height = 23
+    Top = 248
+    Width = 168
+    TabOrder = 4
+    Text = 'edtTunjangan'
+  end
+  object btnGaji: TButton
+    Left = 48
+    Height = 25
+    Top = 296
+    Width = 296
+    Caption = 'Total Gaji'
+    OnClick = btnGajiClick
+    TabOrder = 5
+  end
+  object lblGajiBersih: TLabel
+    Left = 56
+    Height = 15
+    Top = 344
+    Width = 55
+    Caption = 'Gaji Bersih'
+  end
+  object edtTotalGaji: TEdit
+    Left = 168
+    Height = 23
+    Top = 336
+    Width = 176
+    TabOrder = 6
+    Text = 'edtTotalGaji'
+  end
+  object Button1: TButton
+    Left = 72
+    Height = 25
+    Top = 400
+    Width = 75
+    Caption = 'Isi Data Lagi'
+    TabOrder = 7
+  end
+  object Button2: TButton
+    Left = 232
+    Height = 25
+    Top = 400
+    Width = 75
+    Caption = 'Close'
+    TabOrder = 8
+  end
+end
